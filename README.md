@@ -1,7 +1,7 @@
-#Zero-Knowledge Password Vault 🔐
+# Zero-Knowledge Password Vault 🔐
 A self-hosted, full-stack password manager designed with a Zero-Knowledge Architecture. This project ensures that the server never sees the user's master password or decrypted data. All encryption and decryption happen strictly on the client side (iOS), utilizing military-grade cryptography.
 
-#🏗 Architecture
+# 🏗 Architecture
 This project uses a "blind" server model. The backend acts as a secure storage locker, while the client (iOS) holds the keys.
 
 Client (iOS): Handles user input, Argon2 key derivation, and AES-256-GCM encryption.
@@ -10,7 +10,7 @@ Server (Java Spring Boot): REST API that stores user metadata (Salts) and encryp
 
 Database (MySQL): Relational storage running in a Docker container on a NAS.
 
-#🛠 Tech Stack
+# 🛠 Tech Stack
 iOS Client
 Language: Swift 5.9
 
@@ -29,7 +29,7 @@ Build Tool: Gradle
 
 Database: MySQL 9.5 (Dockerized)
 
-#🛡 Security Implementation
+# 🛡 Security Implementation
 The core philosophy is Zero-Knowledge. Here is the cryptographic flow:
 
 Registration:
@@ -54,7 +54,7 @@ All passwords are encrypted using AES-256-GCM before leaving the device.
 
 The database only stores Base64 encoded ciphertext.
 
-#✨ Features
+# ✨ Features
 Secure Authentication: Custom challenge-response login using Argon2id.
 
 Vault Management: View, Add, and Delete passwords securely.
@@ -67,7 +67,7 @@ Clipboard Integration: Tap-to-copy functionality with auto-clearing security (UI
 
 Privacy Mode: Passwords are masked by default; toggle visibility with a secure eye icon.
 
-#🚀 Getting Started
+# 🚀 Getting Started
 1. Backend Setup
 The backend requires a MySQL database running (preferably via Docker).
 
@@ -98,7 +98,7 @@ Update let baseURL to point to your backend IP (e.g., http://localhost:8080 or y
 
 Build and Run on Simulator or Device.
 
-#🔮 Future Roadmap
+# 🔮 Future Roadmap
 Chrome Extension: JavaScript client for desktop access.
 
 Biometrics: FaceID integration to unlock the encryption key from the Keychain.
