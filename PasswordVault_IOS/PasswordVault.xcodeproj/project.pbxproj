@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2153CD02ECF9785001D82B1 /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = B2153CCF2ECF9785001D82B1 /* Argon2Swift */; };
+		B2153CD22ECF9FF2001D82B1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD12ECF9FEF001D82B1 /* LoginView.swift */; };
+		B2153CD42ECFA52C001D82B1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD32ECFA526001D82B1 /* WelcomeView.swift */; };
+		B2153CD62ECFA8AE001D82B1 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD52ECFA8AA001D82B1 /* RegisterView.swift */; };
+		B2153CD82ECFADC4001D82B1 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD72ECFADBE001D82B1 /* AppEnums.swift */; };
+		B2153CDA2ECFB141001D82B1 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD92ECFB139001D82B1 /* ViewExtension.swift */; };
+		B2505A1B2ECFF6CB009BF076 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29504FE2ECE5959007FDDEE /* APIService.swift */; };
+		B2505A1C2ECFF6D6009BF076 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D02CB2ECF91510038DCFE /* CryptoManager.swift */; };
+		B2505A1D2ECFF6DC009BF076 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29504FB2ECE5908007FDDEE /* User.swift */; };
+		B2505A1E2ECFF6E2009BF076 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2153CD72ECFADBE001D82B1 /* AppEnums.swift */; };
+		B2505A202ECFF6FD009BF076 /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2505A1F2ECFF6F7009BF076 /* SharedStorage.swift */; };
+		B2505A212ECFF6FD009BF076 /* SharedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2505A1F2ECFF6F7009BF076 /* SharedStorage.swift */; };
+		B2505A2A2ECFFC1C009BF076 /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = B2505A292ECFFC1C009BF076 /* Argon2Swift */; };
+		B2505A2E2ECFFD3A009BF076 /* VaultEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257D7AE2ECE889B00F61D6F /* VaultEntry.swift */; };
+		B2505A322ED00489009BF076 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2505A082ECFF48B009BF076 /* AuthenticationServices.framework */; };
+		B2505A332ED00489009BF076 /* AuthenticationServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2505A082ECFF48B009BF076 /* AuthenticationServices.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2505A472ED00EBE009BF076 /* PasswordAutofill.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2505A062ECFF48B009BF076 /* PasswordAutofill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B257D7AD2ECE86D600F61D6F /* VaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257D7AC2ECE86D600F61D6F /* VaultView.swift */; };
+		B257D7AF2ECE889F00F61D6F /* VaultEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257D7AE2ECE889B00F61D6F /* VaultEntry.swift */; };
+		B27D02CC2ECF922F0038DCFE /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D02CB2ECF91510038DCFE /* CryptoManager.swift */; };
+		B28BC1B42ECEDB560067F88A /* AddPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28BC1B32ECEDB510067F88A /* AddPasswordView.swift */; };
+		B29504EE2ECE57A3007FDDEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29504ED2ECE57A3007FDDEE /* ContentView.swift */; };
+		B29504FC2ECE590A007FDDEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29504FB2ECE5908007FDDEE /* User.swift */; };
+		B29505012ECE6022007FDDEE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29504FE2ECE5959007FDDEE /* APIService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2505A122ECFF48C009BF076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29504E02ECE57A3007FDDEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2505A052ECFF48B009BF076;
+			remoteInfo = PasswordAutofill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2505A342ED00489009BF076 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2505A332ED00489009BF076 /* AuthenticationServices.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2505A462ED00EA4009BF076 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = PlugIns;
+			dstSubfolderSpec = 1;
+			files = (
+				B2505A472ED00EBE009BF076 /* PasswordAutofill.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2505A622ED0242A009BF076 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2153CD12ECF9FEF001D82B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B2153CD32ECFA526001D82B1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B2153CD52ECFA8AA001D82B1 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B2153CD72ECFADBE001D82B1 /* AppEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		B2153CD92ECFB139001D82B1 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B2505A062ECFF48B009BF076 /* PasswordAutofill.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PasswordAutofill.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2505A082ECFF48B009BF076 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		B2505A1F2ECFF6F7009BF076 /* SharedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStorage.swift; sourceTree = "<group>"; };
+		B257D7AC2ECE86D600F61D6F /* VaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultView.swift; sourceTree = "<group>"; };
+		B257D7AE2ECE889B00F61D6F /* VaultEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntry.swift; sourceTree = "<group>"; };
+		B27D02CB2ECF91510038DCFE /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		B28BC1B32ECEDB510067F88A /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
+		B29504E82ECE57A3007FDDEE /* PasswordVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29504ED2ECE57A3007FDDEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B29504FB2ECE5908007FDDEE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B29504FD2ECE5948007FDDEE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B29504FE2ECE5959007FDDEE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B2505A182ECFF48C009BF076 /* Exceptions for "PasswordAutofill" folder in "PasswordAutofill" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B2505A052ECFF48B009BF076 /* PasswordAutofill */;
+		};
+		B2505A2C2ECFFC6F009BF076 /* Exceptions for "PasswordAutofill" folder in "PasswordVault" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AutoFillView.swift,
+				CredentialProviderViewController.swift,
+			);
+			target = B29504E72ECE57A3007FDDEE /* PasswordVault */;
+		};
+		B29505002ECE5C4A007FDDEE /* Exceptions for "PasswordVault" folder in "PasswordVault" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B29504E72ECE57A3007FDDEE /* PasswordVault */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B2505A0A2ECFF48B009BF076 /* PasswordAutofill */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2505A2C2ECFFC6F009BF076 /* Exceptions for "PasswordAutofill" folder in "PasswordVault" target */,
+				B2505A182ECFF48C009BF076 /* Exceptions for "PasswordAutofill" folder in "PasswordAutofill" target */,
+			);
+			path = PasswordAutofill;
+			sourceTree = "<group>";
+		};
+		B29504EA2ECE57A3007FDDEE /* PasswordVault */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B29505002ECE5C4A007FDDEE /* Exceptions for "PasswordVault" folder in "PasswordVault" target */,
+			);
+			path = PasswordVault;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2505A032ECFF48B009BF076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2505A322ED00489009BF076 /* AuthenticationServices.framework in Frameworks */,
+				B2505A2A2ECFFC1C009BF076 /* Argon2Swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29504E52ECE57A3007FDDEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2153CD02ECF9785001D82B1 /* Argon2Swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2505A072ECFF48B009BF076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2505A082ECFF48B009BF076 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B29504DF2ECE57A3007FDDEE = {
+			isa = PBXGroup;
+			children = (
+				B29504FA2ECE58FE007FDDEE /* Views */,
+				B29504F92ECE58AF007FDDEE /* Helpers */,
+				B29504F82ECE58A4007FDDEE /* Services */,
+				B29504F62ECE57CE007FDDEE /* Models */,
+				B2505A0A2ECFF48B009BF076 /* PasswordAutofill */,
+				B2505A072ECFF48B009BF076 /* Frameworks */,
+				B29504E92ECE57A3007FDDEE /* Products */,
+				B29504EA2ECE57A3007FDDEE /* PasswordVault */,
+			);
+			sourceTree = "<group>";
+		};
+		B29504E92ECE57A3007FDDEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B29504E82ECE57A3007FDDEE /* PasswordVault.app */,
+				B2505A062ECFF48B009BF076 /* PasswordAutofill.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B29504F62ECE57CE007FDDEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B257D7AE2ECE889B00F61D6F /* VaultEntry.swift */,
+				B29504FB2ECE5908007FDDEE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B29504F82ECE58A4007FDDEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B29504FE2ECE5959007FDDEE /* APIService.swift */,
+				B29504FD2ECE5948007FDDEE /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B29504F92ECE58AF007FDDEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2505A1F2ECFF6F7009BF076 /* SharedStorage.swift */,
+				B2153CD92ECFB139001D82B1 /* ViewExtension.swift */,
+				B2153CD72ECFADBE001D82B1 /* AppEnums.swift */,
+				B27D02CB2ECF91510038DCFE /* CryptoManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B29504FA2ECE58FE007FDDEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2153CD52ECFA8AA001D82B1 /* RegisterView.swift */,
+				B2153CD32ECFA526001D82B1 /* WelcomeView.swift */,
+				B2153CD12ECF9FEF001D82B1 /* LoginView.swift */,
+				B28BC1B32ECEDB510067F88A /* AddPasswordView.swift */,
+				B29504ED2ECE57A3007FDDEE /* ContentView.swift */,
+				B257D7AC2ECE86D600F61D6F /* VaultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2505A052ECFF48B009BF076 /* PasswordAutofill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2505A192ECFF48C009BF076 /* Build configuration list for PBXNativeTarget "PasswordAutofill" */;
+			buildPhases = (
+				B2505A022ECFF48B009BF076 /* Sources */,
+				B2505A032ECFF48B009BF076 /* Frameworks */,
+				B2505A042ECFF48B009BF076 /* Resources */,
+				B2505A342ED00489009BF076 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B2505A0A2ECFF48B009BF076 /* PasswordAutofill */,
+			);
+			name = PasswordAutofill;
+			packageProductDependencies = (
+				B2505A292ECFFC1C009BF076 /* Argon2Swift */,
+			);
+			productName = PasswordAutofill;
+			productReference = B2505A062ECFF48B009BF076 /* PasswordAutofill.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B29504E72ECE57A3007FDDEE /* PasswordVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B29504F32ECE57A4007FDDEE /* Build configuration list for PBXNativeTarget "PasswordVault" */;
+			buildPhases = (
+				B29504E42ECE57A3007FDDEE /* Sources */,
+				B29504E52ECE57A3007FDDEE /* Frameworks */,
+				B29504E62ECE57A3007FDDEE /* Resources */,
+				B2505A462ED00EA4009BF076 /* Embed App Extensions */,
+				B2505A622ED0242A009BF076 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2505A132ECFF48C009BF076 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B29504EA2ECE57A3007FDDEE /* PasswordVault */,
+			);
+			name = PasswordVault;
+			packageProductDependencies = (
+				B2153CCF2ECF9785001D82B1 /* Argon2Swift */,
+			);
+			productName = PasswordVault;
+			productReference = B29504E82ECE57A3007FDDEE /* PasswordVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B29504E02ECE57A3007FDDEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					B2505A052ECFF48B009BF076 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					B29504E72ECE57A3007FDDEE = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B29504E32ECE57A3007FDDEE /* Build configuration list for PBXProject "PasswordVault" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B29504DF2ECE57A3007FDDEE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B2153CCE2ECF9785001D82B1 /* XCRemoteSwiftPackageReference "Argon2Swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B29504E92ECE57A3007FDDEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B29504E72ECE57A3007FDDEE /* PasswordVault */,
+				B2505A052ECFF48B009BF076 /* PasswordAutofill */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2505A042ECFF48B009BF076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29504E62ECE57A3007FDDEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2505A022ECFF48B009BF076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2505A1D2ECFF6DC009BF076 /* User.swift in Sources */,
+				B2505A2E2ECFFD3A009BF076 /* VaultEntry.swift in Sources */,
+				B2505A1E2ECFF6E2009BF076 /* AppEnums.swift in Sources */,
+				B2505A212ECFF6FD009BF076 /* SharedStorage.swift in Sources */,
+				B2505A1C2ECFF6D6009BF076 /* CryptoManager.swift in Sources */,
+				B2505A1B2ECFF6CB009BF076 /* APIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B29504E42ECE57A3007FDDEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2153CD62ECFA8AE001D82B1 /* RegisterView.swift in Sources */,
+				B28BC1B42ECEDB560067F88A /* AddPasswordView.swift in Sources */,
+				B29504EE2ECE57A3007FDDEE /* ContentView.swift in Sources */,
+				B2153CD22ECF9FF2001D82B1 /* LoginView.swift in Sources */,
+				B27D02CC2ECF922F0038DCFE /* CryptoManager.swift in Sources */,
+				B2153CD42ECFA52C001D82B1 /* WelcomeView.swift in Sources */,
+				B2505A202ECFF6FD009BF076 /* SharedStorage.swift in Sources */,
+				B257D7AF2ECE889F00F61D6F /* VaultEntry.swift in Sources */,
+				B257D7AD2ECE86D600F61D6F /* VaultView.swift in Sources */,
+				B29505012ECE6022007FDDEE /* APIService.swift in Sources */,
+				B2153CD82ECFADC4001D82B1 /* AppEnums.swift in Sources */,
+				B29504FC2ECE590A007FDDEE /* User.swift in Sources */,
+				B2153CDA2ECFB141001D82B1 /* ViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2505A132ECFF48C009BF076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2505A052ECFF48B009BF076 /* PasswordAutofill */;
+			targetProxy = B2505A122ECFF48C009BF076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B2505A162ECFF48C009BF076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
+				CODE_SIGN_ENTITLEMENTS = PasswordAutofill/PasswordAutofill.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A74MPNKKGP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordAutofill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Password Autofill";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.PasswordVault.PasswordAutofill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2505A172ECFF48C009BF076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = ExtensionIcon;
+				CODE_SIGN_ENTITLEMENTS = PasswordAutofill/PasswordAutofill.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A74MPNKKGP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordAutofill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Password Autofill";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.PasswordVault.PasswordAutofill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B29504F12ECE57A4007FDDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B29504F22ECE57A4007FDDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B29504F42ECE57A4007FDDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasswordVault/PasswordVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A74MPNKKGP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordVault/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.PasswordVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B29504F52ECE57A4007FDDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PasswordVault/PasswordVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A74MPNKKGP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordVault/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henry.PasswordVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2505A192ECFF48C009BF076 /* Build configuration list for PBXNativeTarget "PasswordAutofill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2505A162ECFF48C009BF076 /* Debug */,
+				B2505A172ECFF48C009BF076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29504E32ECE57A3007FDDEE /* Build configuration list for PBXProject "PasswordVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29504F12ECE57A4007FDDEE /* Debug */,
+				B29504F22ECE57A4007FDDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29504F32ECE57A4007FDDEE /* Build configuration list for PBXNativeTarget "PasswordVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B29504F42ECE57A4007FDDEE /* Debug */,
+				B29504F52ECE57A4007FDDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2153CCE2ECF9785001D82B1 /* XCRemoteSwiftPackageReference "Argon2Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tmthecoder/Argon2Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2153CCF2ECF9785001D82B1 /* Argon2Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2153CCE2ECF9785001D82B1 /* XCRemoteSwiftPackageReference "Argon2Swift" */;
+			productName = Argon2Swift;
+		};
+		B2505A292ECFFC1C009BF076 /* Argon2Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2153CCE2ECF9785001D82B1 /* XCRemoteSwiftPackageReference "Argon2Swift" */;
+			productName = Argon2Swift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B29504E02ECE57A3007FDDEE /* Project object */;
+}
