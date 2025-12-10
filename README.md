@@ -67,37 +67,6 @@ Clipboard Integration: Tap-to-copy functionality with auto-clearing security (UI
 
 Privacy Mode: Passwords are masked by default; toggle visibility with a secure eye icon.
 
-# 🚀 Getting Started
-1. Backend Setup
-The backend requires a MySQL database running (preferably via Docker).
-
-Bash
-
-Run MySQL Container
-docker run --name password-db -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=password_vault -p 3306:3306 -d mysql:latest
-Configure src/main/resources/application.properties:
-
-Properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/password_vault
-spring.datasource.username=root
-spring.datasource.password=secret
-Run the server:
-
-Bash
-
-./gradlew bootRun
-2. iOS Client Setup
-Open PasswordVault.xcodeproj in Xcode.
-
-Ensure the Argon2Swift package dependency is installed.
-
-Open Services/APIService.swift.
-
-Update let baseURL to point to your backend IP (e.g., http://localhost:8080 or your NAS IP).
-
-Build and Run on Simulator or Device.
-
 # 🔮 Future Roadmap
 Chrome Extension: JavaScript client for desktop access.
 
